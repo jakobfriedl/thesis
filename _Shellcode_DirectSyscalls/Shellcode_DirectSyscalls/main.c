@@ -14,7 +14,6 @@ BOOL Inject(IN PVX_TABLE pTable, IN HANDLE hProcess, IN PBYTE pShellcode, IN SIZ
 	SIZE_T sBytesWritten = NULL;
 	DWORD dwOldProtection = NULL;
 	HANDLE hThread = NULL;
-	DWORD dwThreadId = NULL;
 	OBJECT_ATTRIBUTES OA = { sizeof(OA), NULL };
 
 	// Allocate memory for the shellcode
