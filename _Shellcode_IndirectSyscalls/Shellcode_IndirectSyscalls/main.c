@@ -150,9 +150,7 @@ int main(int argc, char* argv[]) {
 		PRINT_ERROR("InitializeIndirectSyscalls"); 
 		return EXIT_FAILURE; 
 	}
-	OKAY("Indirect syscalls initialized."); 
-	printf("0x%p\n", Nt.NtCreateThreadEx.pSyscallInstAddress); 
-	getchar(); 
+	OKAY("Indirect syscalls initialized via Hell's Hall technique."); 
 
 	// Get handle to remote process
 	OBJECT_ATTRIBUTES OA = { sizeof(OA), NULL };
