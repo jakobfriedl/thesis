@@ -1,9 +1,3 @@
-/*
- *  ~ structs.h ~
- * Windows structures
- * Author: jakobfriedl
- */
-
 #include <Windows.h>
 
 typedef struct _LSA_UNICODE_STRING {
