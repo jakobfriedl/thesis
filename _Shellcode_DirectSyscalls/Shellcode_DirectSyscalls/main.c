@@ -150,7 +150,7 @@ int main(int argc, char* argv[]) {
 		PRINT_ERROR("InitializeDirectSyscalls");
 		return EXIT_FAILURE; 
 	}
-	OKAY("Direct syscalls table initialized."); 
+	OKAY("Direct syscalls initialized."); 
 
 	// Get handle to remote process
 	// https://ntdoc.m417z.com/ntopenprocess
