@@ -31,9 +31,9 @@ VOID PrintHashes() {
 	printf("\n");
 
 	// Boilderplate code for fetching system calls
-    for (INT i = 0; i < sizeof(Apis) / sizeof(Apis[0]); i++) {
-        printf("if (!FetchNtSyscall(&NtdllConf, %s_HASH, &Nt->%s)) {\n\tPRINT_ERROR(\"FetchNtSyscall [%s]\");\n\treturn FALSE;\n}\n\n", Apis[i], Apis[i], Apis[i], Apis[i]);
-    }
+        for (INT i = 0; i < sizeof(Apis) / sizeof(Apis[0]); i++) {
+	    printf("if (!FetchNtSyscall(&NtdllConf, %s_HASH, &Nt->%s)) {\n\tPRINT_ERROR(\"FetchNtSyscall [%s]\");\n\treturn FALSE;\n}\n\n", Apis[i], Apis[i], Apis[i], Apis[i]);
+        }
 }
 
 BOOL InitNtdllConfigStructure(PNTDLL_CONFIG NtdllConf) {
