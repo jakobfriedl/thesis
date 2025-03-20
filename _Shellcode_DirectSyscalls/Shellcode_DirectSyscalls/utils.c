@@ -1,14 +1,5 @@
 #include "header.h"
 
-// Hells Gate functions
-PTEB RtlGetThreadEnvironmentBlock() {
-#if _WIN64
-	return (PTEB)__readgsqword(0x30);
-#else
-	return (PTEB)__readfsdword(0x16);
-#endif
-}
-
 DWORD64 djb2(PBYTE str) {
 	DWORD64 dwHash = 0x92351f259ecd12a;
 	INT c;
