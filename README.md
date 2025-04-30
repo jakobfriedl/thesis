@@ -1,2 +1,8 @@
-# thesis
-Source code for masters's thesis project.
+# Thesis
+This repository contains the source code for the practical implementations of malware samples for my Master's thesis "*Comparative analysis of Windows process injection techniques regarding the evasion of endpoint security solutions*"
+
+It includes implementations for the following techniques, utilizing Windows APIs, Direct and Indirect Syscalls respectively: 
+- Direct Shellcode Injection
+- Mapping Injection
+- APC Injection 
+- Thread Hijacking
